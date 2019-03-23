@@ -118,12 +118,12 @@ body {
 .box {
     width: 450px;
     height: 150px;
+    position: relative;
 }
 
-.box span::before {
-    border-bottom-left-radius: 2px;
-    border-top-left-radius: 2px;
-    width: 2px;
+.box::before {
+    border-radius: 2px;
+    width: 4px;
     height: 98px;
     position: absolute;
     background: #5ea2da;
@@ -131,23 +131,12 @@ body {
 
 }
 
-.box span::after {
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    width: 2px;
-    height: 98px;
-    background: #5ea2da;
-    position: absolute;
-    margin-left: 2px;
 
 
-
-}
-
-.box span::before,
-.box span::after {
+.box::before
+ {
     content: '';
-    display: flex;
+    display: block;
 }
 
 .cta-block__heading p {
