@@ -6,11 +6,14 @@
     <title>adele</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/styleadele.css">
+    <link type="text/javascript" rel="stylesheet" href="./slick/slick.css">
+    <link type="text/javascript" rel="stylesheet" href="./slick/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
-    <link link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -37,7 +40,7 @@
         <div class="container container--welcome">
             <div class="cta-block">
                 <div class="box">
-                    <h1 class="cta-block__heading">Do It Now <span>Or You Never Get It Back</span>
+                    <h1 class="cta-block__heading">Do It Now<span> Or You Never Get It Back</span>
                     </h1>
                 </div>
                 <span class="cta-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diam nonummy nibh euismod tincidunt.</span>
@@ -54,7 +57,7 @@
     </section>
     <section class="section_unit-block">
         <div class="container container--unit-block">
-            <img class="unit-block_img_bottle" src="./img/bottle.png" alt="bottle">
+            <img class="unit-block-img-bottle" src="./img/bottle.png" alt="bottle">
             <ul class="units">
                 <li class="unit">
                     <h3 class="unit__heading">100</h3>
@@ -77,8 +80,8 @@
     <section class="section-features_we_offer">
         <div class="container container--fwo">
             <div class="universal-heading-block">
-                <h2>Features<span>We Offer</span></h2>
-                <span class="inform_text">Don’t forget to check these real success.</span>
+                <h2 class="universal__heading">Features <span class="universal__subheading"> We Offer</span></h2>
+                <span class="universal__text">Don’t forget to check these real success.</span>
             </div>
             <div class="block_fwo">
                 <ul class="features">
@@ -92,7 +95,7 @@
                     </li>
                 </ul>
 
-                <img class="features_image"src="./img/man_woman.png" alt="photo man_woman">
+                <img class="features_image" src="./img/man_woman.png" alt="photo man_woman" width="360px">
 
                 <ul class="features">
                     <li class="feature">
@@ -108,32 +111,55 @@
         </div>
     </section>
     <section class="real_results">
-        <!-- секция под слайдер -->
-        <div class="container container--results">
+        <div class="container container--real-results">
             <div class="universal-heading-block">
-                <h2>real man <span>real result</span></h2>
-                <span class="inform_text">Don’t forget to check these real success.</span>
+                <h2 class="universal__heading">real man <span class="universal__subheading">real result</span></h2>
+                <span class="universal__text">Don’t forget to check these real success.</span>
             </div>
-            <div class="image-box">
-                <img src="./img/fat_man.png" alt="photo">
-                <img src="./img/man_near_fat_man.png" alt="photo">
-            </div>
-            <div class="results-box">
-                <ul class="results">
-                    <li class="result_before">
-                        <h3 class="result__heading">87</h3>
-                        <span class="result__subheading">kg</span>
-                        <span class="result__text">before</span>
-                    </li>
-                    <li class="result_after">
-                        <h3 class="result__heading">63</h3>
-                        <span class="result__subheading">kg</span>
-                        <span class="result__text">after</span>
-                    </li>
-                </ul>
-                <div class="result-name">
-                    <span class="name">Mike Andersen</span>
-                    <span class="age">age:28</span>
+            <div class="rr-slider">
+                <div class="real-results__content">
+                    <div class="real-results__images">
+                        <img src="./img/fat_man.png" alt="photo" width="262px" class="real-results__image1">
+                        <img src="./img/man_near_fat_man.png" alt="photo" width="360px" class="real-results__image2">
+                    </div>
+                    <ul class="results">
+                        <li class="result-before">
+                            <h3 class="result-before__heading">87</h3>
+                            <span class="result-before__subheading">kg</span>
+                            <span class="result-before__text">before</span>
+                        </li>
+                        <li class="result-after">
+                            <h3 class="result-after__heading">63</h3>
+                            <span class="result-after__subheading">kg</span>
+                            <span class="result-after__text">after</span>
+                        </li>
+                    </ul>
+                    <div class="result-name">
+                        <span class="name">Mike Andersen</span>
+                        <span class="age">age:28</span>
+                    </div>
+                </div>
+                <div class="real-results__content">
+                    <div class="real-results__images">
+                        <img src="./img/before.jpg" alt="photo" width="262px" class="real-results__image1">
+                        <img src="./img/after.JPG" alt="photo" width="360px" class="real-results__image2">
+                    </div>
+                    <ul class="results">
+                        <li class="result-before">
+                            <h3 class="result-before__heading">63</h3>
+                            <span class="result-before__subheading">kg</span>
+                            <span class="result-before__text">before</span>
+                        </li>
+                        <li class="result-after">
+                            <h3 class="result-after__heading">93</h3>
+                            <span class="result-after__subheading">kg</span>
+                            <span class="result-after__text">after</span>
+                        </li>
+                    </ul>
+                    <div class="result-name">
+                        <span class="name">Kot Andersen</span>
+                        <span class="age">age:36</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,8 +175,8 @@
             <div class="feedback">
                 <img src="./img/Alena_Farmer.png" alt="photo">
                 <div class="feedback_name">
-                    <span class="name">Alena Parker</span>
-                    <span class="country">Sydney, Australia</span>
+                    <span class="testimonials__name">Alena Parker</span>
+                    <span class="testimonials__country">Sydney, Australia</span>
                 </div>
             </div>
         </div>
@@ -158,8 +184,8 @@
     <section class="Supplements_facts">
         <div class="container container--supplements">
             <div class="universal-heading-block">
-                <h2>Supplement<span>Facts</span></h2>
-                <span class="inform_text">We’re brave enough to show what we use.</span>
+                <h2 class="universal__heading">Supplement<span class="universal__subheading">Facts</span></h2>
+                <span class="universal__text">We’re brave enough to show what we use.</span>
             </div>
             <table>
                 <thead>
@@ -227,8 +253,8 @@
     <section class="certification">
         <div class="container container--certification">
             <div class="universal-heading-block">
-                <h2>certification</h2>
-                <span class="inform_text">We don’t sell craps, We’re certified.</span>
+                <h2 class="universal__heading">certification</h2>
+                <span class="universal__text">We don’t sell craps, We’re certified.</span>
             </div>
             <div class="certification-block">
                 <img src="./img/cradle.png" alt="photo">
@@ -242,13 +268,13 @@
     <section class="order">
         <div class="container container--order">
             <div class="order-box">
-                <div class="oorder-image-block"><img src="./img/box_bottle.png" alt="photo"></div>
+                <div class="order-image-block"><img src="./img/box_bottle.png" alt="photo" width="830 px"></div>
                 <!--являет горизонтальный скролл -->
                 <div class="order_now">
                     <div class="universal-heading-block">
-                        <h2>A SUPPLEMENT<br><span>29USD</span></h2>
+                        <h2 class="universal__heading">A SUPPLEMENT<span class="universal__subheading">$29 USD</span></h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugiat quam molestiae accusamus autem, explicabo sapiente, repellat blanditiis aliquam voluptatem amet atque reiciendis voluptas nemo sed perspiciatis provident, enim quae!</p>
+                    <p class="universal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugiat quam molestiae accusamus autem, explicabo sapiente, repellat blanditiis aliquam voluptatem amet atque reiciendis voluptas nemo sed perspiciatis provident, enim quae!</p>
                     <a href="#" class="order_now"><span>order now</span></a>
                 </div>
             </div>
@@ -257,8 +283,8 @@
     <section class="subscribe">
         <div class="container container--subscribe">
             <div class="universal-heading-block-white">
-                <h2>subscribe<span>for tips & Offers</span></h2>
-                <span>We regularly knock our customers with useful tips and offers.</span>
+                <h2 class="universal__heading">subscribe<span class="universal__subheading">for tips & Offers</span></h2>
+                <span class="universal__text">We regularly knock our customers with useful tips and offers.</span>
 
             </div>
             <div class="subscribe-form">
@@ -275,8 +301,8 @@
     <section class="inquire">
         <div class="container container--inquire">
             <div class="universal-heading-block">
-                <h2>INQUIRE<span>YOUR ISSUE</span></h2>
-                <span class="inform_text">We’re always happy to reply our customers.</span>
+                <h2 class="universal__heading">INQUIRE<span class="universal__subheading">YOUR ISSUE</span></h2>
+                <span class="universal__text">We’re always happy to reply our customers.</span>
             </div>
             <div class="inquire-form">
                 <form action="#">
@@ -297,14 +323,12 @@
             <div class="Allright">
                 <span>© Amazon LLC. All Rights Reserved </span>
             </div>
-            <nav class="footer_nav">
-                <ul>
-                    <li>About</li>
-                    <li>Term </li>
-                    <li>Privacy</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+            <ul class="footer_nav">
+                <li>About</li>
+                <li>Term </li>
+                <li>Privacy</li>
+                <li>Contact</li>
+            </ul>
             <ul class="share">
                 <li>
                     <a href="#">Facebook</a>
@@ -322,6 +346,14 @@
 
         </div>
     </footer>
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type=" text/javascript" src="./slick/slick.min.js"></script>
+    <script>
+        $('.rr-slider').slick();
+
+    </script>
+
 </body>
 
 </html>
